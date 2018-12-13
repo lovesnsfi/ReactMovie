@@ -1,0 +1,18 @@
+@import "../../scss/common.scss";
+.title{
+    width: 100%;
+    height: 40px;
+    background-color: $primaryColor;
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    .back{
+        font-size: 24px;
+        position: absolute;
+        left: 10px;
+        color: white;
+        font-family: "iconfont";
+    }
+}

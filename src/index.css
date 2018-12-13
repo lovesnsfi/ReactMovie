@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-tap-highlight-color: transparent;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 961479 */
+  src: url('https://at.alicdn.com/t/font_961479_57y7r0b1elp.eot');
+  src: url('https://at.alicdn.com/t/font_961479_57y7r0b1elp.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_961479_57y7r0b1elp.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_961479_57y7r0b1elp.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_961479_57y7r0b1elp.svg#iconfont') format('svg');
+}

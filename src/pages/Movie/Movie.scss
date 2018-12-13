@@ -1,0 +1,29 @@
+@import "../../scss/common.scss";
+.topNav{
+    @include flexbox();
+    >li{
+        height: 40px;
+        flex: 1;
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        &.active{
+            color: $primaryColor;
+        }
+    }
+}
+.border-bottom{
+    height: 2px;
+    background-color: lightgray;
+    width: 100%;
+    .border-bottom-bar{
+        width: 50%;
+        height: 2px;
+        background-color: $primaryColor;
+        transition: all 0.2s linear;
+        transform: translateX(0);
+        &.active{
+            transform: translateX(100%);
+        }
+    }
+}
