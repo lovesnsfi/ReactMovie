@@ -2998,6 +2998,13 @@ dom-serializer@0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
+dom7@^2.1.2:
+  version "2.1.2"
+  resolved "http://registry.npm.taobao.org/dom7/download/dom7-2.1.2.tgz#a914070c0abe8465384997a9c4f34475f67f75bd"
+  integrity sha1-qRQHDAq+hGU4SZepxPNEdfZ/db0=
+  dependencies:
+    ssr-window "^1.0.1"
+
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
@@ -8505,22 +8512,10 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@7.1.0:
+sass-loader@7.1.0, sass-loader@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-7.1.0.tgz#16fd5138cb8b424bf8a759528a1972d72aad069d"
   integrity sha512-+G+BKGglmZM2GUSfT9TLuEp6tzehHPjAMoRRItOojWIqIGPloVCMhNIQuG639eJ+y033PaGTSjLaTHts8Kw79w==
-  dependencies:
-    clone-deep "^2.0.1"
-    loader-utils "^1.0.1"
-    lodash.tail "^4.1.1"
-    neo-async "^2.5.0"
-    pify "^3.0.0"
-    semver "^5.5.0"
-
-sass-loader@^7.1.0:
-  version "7.1.0"
-  resolved "http://registry.npm.taobao.org/sass-loader/download/sass-loader-7.1.0.tgz#16fd5138cb8b424bf8a759528a1972d72aad069d"
-  integrity sha1-Fv1ROMuLQkv4p1lSihly1yqtBp0=
   dependencies:
     clone-deep "^2.0.1"
     loader-utils "^1.0.1"
@@ -8942,6 +8937,11 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/ssr-window/download/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
+  integrity sha1-MHUqakZm53Z/C35qpvwv29DZs2k=
+
 ssri@^5.2.4:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-5.3.0.tgz#ba3872c9c6d33a0704a7d71ff045e5ec48999d06"
@@ -9180,6 +9180,14 @@ svgo@^1.0.0, svgo@^1.0.5:
     stable "~0.1.6"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swiper@^4.4.2:
+  version "4.4.2"
+  resolved "http://registry.npm.taobao.org/swiper/download/swiper-4.4.2.tgz#3a35237cbf4870034784e158b4197b65b763d647"
+  integrity sha1-OjUjfL9IcANHhOFYtBl7Zbdj1kc=
+  dependencies:
+    dom7 "^2.1.2"
+    ssr-window "^1.0.1"
 
 symbol-tree@^3.2.2:
   version "3.2.2"

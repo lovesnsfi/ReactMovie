@@ -4,9 +4,6 @@ import Movie from "../Movie/Movie";
 import Cinemal from "../Cinemal/Cinemal";
 import "./Index.scss";
 export default class Index extends Component{
-    constructor(props){
-        super(props);
-    }
     render(){
         const match=this.props.match;
         return (

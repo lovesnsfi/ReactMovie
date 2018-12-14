@@ -1,0 +1,48 @@
+@import "../../scss/common.scss";
+.comingTitle{
+    padding-left: 2px;
+    font-size: 18px;
+    color: gray;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.m-item{
+    @include flexbox();
+    box-sizing: border-box;
+    padding: 2px;
+    border-bottom: 1px solid #ececec;
+    margin: 2px 0;
+    .left{
+        width: 80px;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .center{
+        flex: 1;
+        @include flexbox(column);
+        justify-content: space-between;
+        font-size: 14px;
+        margin: 0px 2px;
+    }
+    .right{
+        width: 60px;
+        @include flexbox(column);
+        justify-content: center;
+        align-items: center;
+        .btnBuy{
+            width: 50px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: $primaryColor;
+            color: white;
+            border: none;
+        }
+        .btnPre{
+            @extend .btnBuy;
+            background-color: #3c9fe6;
+        }
+    }
+}
