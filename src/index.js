@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './pages/App/App.js';
-import {HashRouter,Route,Switch} from 'react-router-dom';
+import {HashRouter,Route} from 'react-router-dom';
 import Index from "./pages/Index/Index";
 import Detail from "./pages/Detail/Detail";
     
@@ -10,13 +10,11 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render((
     <HashRouter>
-        <Switch>
-            <App>
-                <Route path="/index" component={Index} ></Route>
-                <Route path="/detail" component={Detail}></Route>
-                {/*重定向路由，当访问根路径，直接跳转到movie的路由下面 */}
-            </App>
-        </Switch>  
+        <App>
+            <Route path="/index" component={Index} ></Route>
+            <Route path="/detail" component={Detail}></Route>
+            {/*重定向路由，当访问根路径，直接跳转到movie的路由下面 */}
+        </App>
        
     </HashRouter>
 ), document.getElementById('root'));

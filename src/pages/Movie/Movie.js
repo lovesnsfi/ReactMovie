@@ -33,6 +33,7 @@ export default class Movie extends Component{
 
     }
     render(){
+        
         return (
             <Page className="movie">
                 <PageHeader history={this.props.history}>猫眼电影</PageHeader>
@@ -57,10 +58,10 @@ export default class Movie extends Component{
                     <div className="swiper-container">
                         <div className="swiper-wrapper">
                             <div className="swiper-slide">
-                                <Hot></Hot>
+                                <Hot history={this.props.history}></Hot>
                             </div>
                             <div className="swiper-slide">
-                                <Coming></Coming>
+                                <Coming history={this.props.history}></Coming>
                             </div>
 
                         </div>
