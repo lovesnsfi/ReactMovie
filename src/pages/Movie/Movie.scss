@@ -27,3 +27,11 @@
         }
     }
 }
+.movie{
+    @include flexbox(column);
+    height: 100%;
+}
+.swiperContent{
+    flex: 1;
+    overflow: auto;
+}
