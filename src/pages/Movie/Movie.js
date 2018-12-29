@@ -8,7 +8,6 @@ import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.min.css'
 
 
-
 export default class Movie extends Component{
     constructor(props){
         super(props);
@@ -52,7 +51,7 @@ export default class Movie extends Component{
                     }}>即将上映</li>
                 </ul>
                 <div className="border-bottom">
-                    <div className={`border-bottom-bar ${this.state.pageType==1?'active':null}`}></div>
+                    <div className={`border-bottom-bar ${this.state.pageType===1?'active':null}`}></div>
                 </div>
                 <div className="swiperContent">
                     <div className="swiper-container">

@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import "./MovieItem.scss";
 export default class MovieItem extends Component {
+   
   render() {
       const item=this.props.mitem;
     return (
@@ -11,6 +12,7 @@ export default class MovieItem extends Component {
                     id:item.id
                 }
             });
+           
         }}>
             <div className="comingTitle">
                 {this.props.children}

@@ -9,7 +9,7 @@ import Detail from "./pages/Detail/Detail";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render((
-    <HashRouter>
+    <HashRouter history={this.props.history}>
         <App>
             <Route path="/index" component={Index} ></Route>
             <Route path="/detail" component={Detail}></Route>
